@@ -1,0 +1,18 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+COPY back /app/back
+
+# Update the system
+RUN apt update && apt upgrade -y
+RUN apt install -y gcc libmariadb-dev libmariadb3 && apt clean
+
+
+# Install requirements
+RUN pip install -r back/requirements.txt
+
+# Expose the port
+EXPOSE 8000
+
+# Run the application
+CMD ["uvicorn", "back.main:app", "--host", "0.0.0.0", "--reload", "--port", "8000"]
