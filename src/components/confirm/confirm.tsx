@@ -44,6 +44,9 @@ function Confirm({ title, couleur, onClick, classNameAddon }: { title: string, c
                         text-center
                         mb-2
                         font-semibold
+                        flex
+                        items-center
+                        justify-center
                         h-10
                         ${baseClasses}
                         ${classNameAddon || ''}`}

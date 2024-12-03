@@ -10,12 +10,12 @@ const Accueil: React.FC = () => {
 
     //EXEMPLE POPUP
     //stoquage de l'etat du popup
-    const[isPopupTestOpen,setIsPopupTestOpen]=useState(false);
+    const [isPopupTestOpen, setIsPopupTestOpen] = useState(false);
     //fonction qui toggle son etat
-    const togglePopupTest=()=>setIsPopupTestOpen(!isPopupTestOpen);
+    const togglePopupTest = () => setIsPopupTestOpen(!isPopupTestOpen);
 
     //fonction qui va s'executer une fois qu'on clique 'ok' dans le popup
-    const handleClickPopup=()=>{
+    const handleClickPopup = () => {
         alert("T'as cliqué ok");
     }
 
@@ -55,7 +55,7 @@ const Accueil: React.FC = () => {
                                 >
                                     Coucou
                                 </h1>
-                                <Confirm title="Ouvrir un popup test" couleur={"green"} onClick={togglePopupTest}/>
+                                <Confirm title="Ouvrir un popup test" couleur={"green"} onClick={togglePopupTest} />
                             </div>
                         </form>
                     </div>
@@ -63,22 +63,22 @@ const Accueil: React.FC = () => {
                 </div>
             </div>
             <PopupSimple
-            isOpen={isPopupTestOpen}
-            onClose={togglePopupTest}
-            title={"Je suis un popup"}
-            content={
-                <><Input
-                                    id="nomAmi"
-                                    label="Ajouter un ami"
-                                    placeholder="Nom de votre ami"
-                                    type="text"
- />
-                </>
-            }
-            acceptText="Valider"
-            declineText="Retour"
-            onAccept={handleClickPopup}
-            onDecline={togglePopupTest}
+                isOpen={isPopupTestOpen}
+                onClose={togglePopupTest}
+                title={"Je suis un popup"}
+                content={
+                    <><Input
+                        id="nomAmi"
+                        label="Ajouter un ami"
+                        placeholder="Nom de votre ami"
+                        type="text"
+                    />
+                    </>
+                }
+                acceptText="Valider"
+                declineText="Retour"
+                onAccept={handleClickPopup}
+                onDecline={togglePopupTest}
             />
         </div>
 
