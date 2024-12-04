@@ -1,5 +1,6 @@
 import { checkChamps } from "./gestionErreurs/gestionErreursGenerales";
 import * as crud from "../api/friends";
+import React from "react";
 // Fonction pour récupérer les valeurs du formulaire
 export function getValues() {
     return {
@@ -38,6 +39,9 @@ export async function ajouterAmiCheck(setErrors: React.Dispatch<React.SetStateAc
     }
 }
 
+export function ajouterItem(setItemList: React.Dispatch<React.SetStateAction<string[]>>) {
+    setItemList((itemList) => [...itemList, "blob"]);
+}
 function ajoutAmiBd(nomAmi: string) {
     // Ajout de l'ami en base de données
    return crud.addFriend(nomAmi)
