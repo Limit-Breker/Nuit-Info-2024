@@ -13,7 +13,7 @@ const HeaderAccueil: React.FC<HeaderProps> = ({ }) => {
     }
 
     return (
-        <header className="bg-none backdrop-blur text-font_color p-4 pt-5 h-10p flex justify-between px-16 fixed top-0 left-0 w-full">
+        <header className="bg-none backdrop-blur text-font_color p-4 pt-5 h-10p flex justify-between px-16 fixed top-0 left-0 w-full z-50">
             <div className="flex items-center justify-center gap-x-16">
                 <h1 className="text-3xl font-bold text-normal-blue">Nuit de l'info 2024 header</h1>
                 <div className="flex items-center justify-center gap-x-5 bg-light-gray/40 px-5 py-2.5 rounded-jb">
