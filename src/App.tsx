@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Accueil from './pages/accueil/accueil';
 import Test from './pages/test/test';
-import Credit from './pages/credit/creditdefin';
+import Credit from './pages/credit/Credit';
 
 const App: React.FC = () => {
     return (
