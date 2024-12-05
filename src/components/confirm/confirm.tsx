@@ -2,12 +2,13 @@ function Confirm({ title, couleur, onClick, classNameAddon }: { title: string, c
     let baseClasses = "";
 
     switch (couleur) {
-        case 'green':
+        case 'blue':
             baseClasses = `
                 text-black
-                bg-green-button
-                hover:bg-green-hover
-                focus:ring-green-border`;
+                bg-light-blue
+                hover:bg-black
+                hover:text-white
+                focus:ring-light-blue`;
             break;
         case 'red':
             baseClasses = `
@@ -19,14 +20,14 @@ function Confirm({ title, couleur, onClick, classNameAddon }: { title: string, c
         case 'dark':
             baseClasses = `
                 text-white
-                bg-dark-button
-                hover:bg-dark-hover
-                focus:ring-dark-border`;
+                bg-black
+                hover:bg-light-blue
+                focus:ring-light-blue`;
             break;
         case 'brown':
             baseClasses = `
                 text-black
-                bg-brown-button
+                bg-normal-blue
                 hover:bg-brown-hover
                 focus:ring-brown-border`;
             break;
@@ -48,6 +49,7 @@ function Confirm({ title, couleur, onClick, classNameAddon }: { title: string, c
                         items-center
                         justify-center
                         h-10
+                        transition-colors
                         ${baseClasses}
                         ${classNameAddon || ''}`}
             onClick={onClick}
