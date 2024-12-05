@@ -26,7 +26,7 @@ function Confirm({ title, couleur, onClick, classNameAddon }: { title: string, c
         case 'brown':
             baseClasses = `
                 text-black
-                bg-brown-button
+                bg-normal-blue
                 hover:bg-brown-hover
                 focus:ring-brown-border`;
             break;
