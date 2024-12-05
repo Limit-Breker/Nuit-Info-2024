@@ -19,29 +19,29 @@ const Accueil: React.FC = () => {
 
     //fonction qui va s'executer une fois qu'on clique 'ok' dans le popup
 
-    const handleClickPopupList=()=>{
-       //j'appelle une fonction du controlleur qui peut modifier ma liste
+    const handleClickPopupList = () => {
+        //j'appelle une fonction du controlleur qui peut modifier ma liste
         ajouterItem(setListeAmis);
     }
 
-    const handleClickPopup=()=>{
+    const handleClickPopup = () => {
         //j'appelle une fonction du controlleur qui peut modifier ma liste
-          alert("coucou")
-     }
+        alert("coucou")
+    }
 
     return (
         <div>
             <HeaderAccueil />
             <div className="bg-background min-h-90p bg-cover bg-center">
                 <div className="flex flex-col justify-center">
-                    
+
                     <div className='w-full max-w-xs'>
-                    <ul>
-                    {listeAmis.map((ami, index) => (
-                        <li key={index}>{ami}</li>
-                    ))}
-                </ul>
-                <Confirm title="Ajouter un item" couleur="dark" onClick={handleClickPopupList} />
+                        <ul>
+                            {listeAmis.map((ami, index) => (
+                                <li key={index}>{ami}</li>
+                            ))}
+                        </ul>
+                        <Confirm title="Ajouter un item" couleur="dark" onClick={handleClickPopupList} />
                         <form
                             className=" bg-white
                                         shadow-md
