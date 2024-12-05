@@ -15,7 +15,7 @@ const HeaderAccueil: React.FC<HeaderProps> = ({  }) => {
     return (
         <header className="bg-main-dark text-font_color p-4 pt-5 h-10p flex justify-between px-16">
             <div>
-                <h1 className="text-3xl  font-bold text-font-color">Nuit de l'info 2024 header</h1>
+                <h1 className="text-3xl  font-bold text-font-color">Nuit de l'info 2024</h1>
             </div>
             <div className="flex">
                 <Confirm title="Demo redirection" couleur="green" onClick={toTest} classNameAddon="flex-1"/>

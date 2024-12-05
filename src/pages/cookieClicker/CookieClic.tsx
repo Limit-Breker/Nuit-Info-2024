@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const CookieClicker: React.FC = () => {
+const CookieClic: React.FC = () => {
   const [clicks, setClicks] = useState(0);
   const [cps, setCps] = useState(0);
   const [multiplier, setMultiplier] = useState(1);
@@ -54,4 +54,4 @@ const CookieClicker: React.FC = () => {
   );
 };
 
-export default CookieClicker;
+export default CookieClic;

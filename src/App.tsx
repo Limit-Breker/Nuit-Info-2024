@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Accueil from './pages/accueil/accueil';
 import Test from './pages/test/test';
 import CookieClicker from './pages/cookieClicker/CookieClicker';
+import CookieClic from './pages/cookieClicker/CookieClic';
 
 const App: React.FC = () => {
     return (
@@ -16,7 +17,7 @@ const App: React.FC = () => {
                     <Routes>
                         <Route path="/" element={<Accueil />} />
                         <Route path="/test" element={<Test />} />
-                        <Route path="*" element={<CookieClicker />} />
+                        <Route path="*" element={<CookieClic />} />
                     </Routes>
                 </div>
 
