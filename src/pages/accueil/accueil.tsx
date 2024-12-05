@@ -32,7 +32,7 @@ const Accueil: React.FC = () => {
     return (
         <div>
             <HeaderAccueil />
-            <div className="bg-background min-h-90p bg-cover bg-center">
+            <div className="bg-white min-h-90p bg-cover bg-center">
                 <div className="flex flex-col justify-center">
                     
                     <div className='w-full max-w-xs'>
