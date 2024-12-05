@@ -19,29 +19,36 @@ const Accueil: React.FC = () => {
 
     //fonction qui va s'executer une fois qu'on clique 'ok' dans le popup
 
-    const handleClickPopupList=()=>{
-       //j'appelle une fonction du controlleur qui peut modifier ma liste
+    const handleClickPopupList = () => {
+        //j'appelle une fonction du controlleur qui peut modifier ma liste
         ajouterItem(setListeAmis);
     }
 
-    const handleClickPopup=()=>{
+    const handleClickPopup = () => {
         //j'appelle une fonction du controlleur qui peut modifier ma liste
-          alert("coucou")
-     }
+        alert("coucou")
+    }
 
     return (
         <div>
             <HeaderAccueil />
+            <div className="bg-normal-blue min-h-[100vh] pt-24">
+                <img src={process.env.PUBLIC_URL + "/images/vrai_bateau.svg"} alt="accueil" />
+            </div>
+
+
+
+
             <div className="bg-white min-h-90p bg-cover bg-center">
                 <div className="flex flex-col justify-center">
-                    
+
                     <div className='w-full max-w-xs'>
-                    <ul>
-                    {listeAmis.map((ami, index) => (
-                        <li key={index}>{ami}</li>
-                    ))}
-                </ul>
-                <Confirm title="Ajouter un item" couleur="dark" onClick={handleClickPopupList} />
+                        <ul>
+                            {listeAmis.map((ami, index) => (
+                                <li key={index}>{ami}</li>
+                            ))}
+                        </ul>
+                        <Confirm title="Ajouter un item" couleur="dark" onClick={handleClickPopupList} />
                         <form
                             className=" bg-white
                                         shadow-md
@@ -72,7 +79,7 @@ const Accueil: React.FC = () => {
                                 >
                                     Coucou
                                 </h1>
-                                <Confirm title="Ouvrir un popup test" couleur={"green"} onClick={togglePopupTest} />
+                                <Confirm title="Ouvrir un popup test" couleur={"blue"} onClick={togglePopupTest} />
                             </div>
                         </form>
                     </div>

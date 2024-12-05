@@ -22,7 +22,7 @@ const SupprModal: React.FC<SimpleModalProps> = ({ isOpen, text, onClose, onAccep
                 </div>
                 <div className="flex gap-4">
                     <div className="flex-1">
-                        <Confirm title={acceptText} couleur="green" onClick={onAccept} />
+                        <Confirm title={acceptText} couleur="blue" onClick={onAccept} />
                     </div>
                     <div className="flex-1">
                         <Confirm title={declineText} couleur="red" onClick={onDecline} />
