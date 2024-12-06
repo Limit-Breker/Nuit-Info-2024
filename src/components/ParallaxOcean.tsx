@@ -11,6 +11,18 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
     const [mouseY, setMouseY] = useState(0);
 
     useEffect(() => {
+        const handleResize = () => {
+            setMouseX(window.innerWidth / 2); // Repositionner au centre par défaut
+            setMouseY(window.innerHeight / 2);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
         const handleMouseMove = (event: MouseEvent) => {
             setMouseX(event.clientX);
             setMouseY(event.clientY);
@@ -23,14 +35,14 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
 
     }, []);
 
-    const leftMargin = 100; // Marge gauche (bordure)
-    const rightMargin = 100; // Marge droite (bordure)
+    const leftMargin = window.innerWidth * 0.05; // 5% de la largeur de l'écran
+    const rightMargin = window.innerWidth * 0.05;
+    const maxBottom = window.innerHeight - 600; // Ajustez selon la hauteur de l'écran
+
     const maxLeft = Math.max(leftMargin, mouseX - 465); // Position minimale (gauche)
     const maxRight = Math.min(mouseX - 250, window.innerWidth - rightMargin - 200); // Position maximale (droite)
     const maxTop = 150; // Position maximale (haut)
-    const maxBottom = window.innerHeight - 600; // Position maximale (bas)
 
-    const moveRange = 200;
     const nuageOffset = -650;
     const maxLeftNuage = Math.max(-leftMargin, mouseX - 465 + nuageOffset); // Position minimale des nuages
     const maxRightNuage = Math.min(
@@ -45,7 +57,11 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
     const birdTop = Math.max(maxTop, Math.min(maxBottom, mouseY - 200)) - 20;
 
     return (
-        <div className="bg-white min-h-[100vh] pt-24 overflow-hidden w-full relative">
+        <div className="bg-white min-h-[100vh] pt-24 overflow-hidden w-full relative"
+            style={{
+                height: window.innerHeight < 650 ? '650px' : '100%',
+            }}
+        >
             <img
                 src={process.env.PUBLIC_URL + "/images/ciel.svg"}
                 alt="ciel"
@@ -77,8 +93,8 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
                 style={{
                     zIndex: 30,
                     position: 'absolute',
-                    bottom: '400px',
-                    left: isFixBoat ? '40%' : `${Math.max(maxLeft, Math.min(maxRight, window.innerWidth - 500))}px`,
+                    bottom: window.innerHeight < 800 ? '150px' : '400px',
+                    left: isFixBoat ? window.innerWidth < 850 ? '20%' : '40%' : `${Math.max(maxLeft, Math.min(maxRight, window.innerWidth - 500))}px`,
                     transition: 'left 0.3s ease-out',
                     animation: isFixBoat ? '' : 'tangage 2s infinite ease-in-out',
                 }}
@@ -87,17 +103,27 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
                     <img
                         src={process.env.PUBLIC_URL + "/images/speaker/jean-marin.svg"}
                         alt="marin"
-                        className='absolute top-[180px] left-12 h-12 w-12 object-cover'
+                        style={{
+                            top: window.innerWidth < 500 ? '75px' : '180px'
+                        }}
+                        className='absolute left-12 h-12 w-12 object-cover'
                     />
                 )}
                 <img
                     src={process.env.PUBLIC_URL + "/images/vrai_bateau.svg"}
+                    style={{
+                        width: window.innerWidth < 500 ? '250px' : '460px',
+                        height: 'auto',
+                    }}
                     alt="bateau" />
                 {!isFixBoat && (
                     <img
                         src={process.env.PUBLIC_URL + "/images/speaker/lucie.svg"}
                         alt="lucie"
-                        className='absolute top-[178px] right-12 h-12 w-12 object-cover'
+                        style={{
+                            top: window.innerWidth < 500 ? '75px' : '178px'
+                        }}
+                        className='absolute right-12 h-12 w-12 object-cover'
                     />
                 )}
             </div>
@@ -105,26 +131,31 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
             <img
                 src={process.env.PUBLIC_URL + "/images/vague1.svg"}
                 alt="mer"
-                className="absolute bottom-0 left-0 w-full h-full object-cover" />
+                style={{
+                    height: window.innerHeight < 800 ? '400px' : '900px', // Change dynamiquement la hauteur
+                }}
+                className="absolute bottom-0 left-0 w-full object-cover" />
 
             <img
                 src={process.env.PUBLIC_URL + "/images/vague2.svg"}
                 alt="vague1"
-                className="bottom-12 w-full h-[80vh] object-contain z-10"
+                className="bottom-12 w-full object-contain z-10"
                 style={{
                     position: 'absolute',
                     left: `${Math.max(maxLeftVague, Math.min(maxRightVague, window.innerWidth - 500))}px`,
                     transition: 'left 1s ease-out',
+                    height: window.innerHeight < 800 ? '250px' : '400px',
                 }} />
 
             <img
                 src={process.env.PUBLIC_URL + "/images/vague3.svg"}
                 alt="vague1"
-                className="bottom-0 w-full h-[90vh] object-contain z-20"
+                className="bottom-0 w-full object-contain z-20"
                 style={{
                     position: 'absolute',
                     left: `${Math.max(maxLeftVague, Math.min(maxRightVague, window.innerWidth - 500))}px`,
                     transition: 'left 1.5s ease-out',
+                    height: window.innerHeight < 800 ? '400px' : '90vh',
                 }} />
         </div >
     )

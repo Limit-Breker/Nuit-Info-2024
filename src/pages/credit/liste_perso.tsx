@@ -95,38 +95,46 @@ const ListePerso: React.FC = () => {
         setDonnée(newDonnée);
     };
     return (
-        <div className="z-40 absolute bottom-[450px] left-[41%] flex flex-row gap-x-1">
-            {donnée.map((person, index) => (
-                <div key={index} className={`${person.popupState ? '' : 'hover:-translate-y-2'} transition-transform cursor-pointer`}>
-                    <img
-                        className="w-10 h-10"
-                        src={person.image}
-                        alt={person.title}
-                        onClick={() => {
-                            resetAllPopups();
-                            const newDonnée = [...donnée];
-                            newDonnée[index].popupState = true;
-                            setDonnée(newDonnée);
-                        }}
-                    />
-                    {person.popupState && (
-                        <PopupCredit
-                            title={person.title}
-                            role={person.role}
-                            github={person.github}
-                            linkedin={person.linkedin}
-                            image={person.image}
-                            onClose={() => {
+        <div
+            className="z-40 absolute flex flex-row gap-x-1"
+            style={{
+                left: window.innerWidth < 850 ? '21%' : '41%',
+                bottom: window.innerHeight < 800 ? '296px' : '550px',
+            }}
+        >
+            {
+                donnée.map((person, index) => (
+                    <div key={index} className={`${person.popupState ? '' : 'hover:-translate-y-2'} transition-transform cursor-pointer`}>
+                        <img
+                            className="w-10 h-10 object-contain"
+                            src={person.image}
+                            alt={person.title}
+                            onClick={() => {
+                                resetAllPopups();
                                 const newDonnée = [...donnée];
-                                newDonnée[index].popupState = false;
+                                newDonnée[index].popupState = true;
                                 setDonnée(newDonnée);
                             }}
-                            isOpen={person.popupState}
                         />
-                    )}
-                </div>
-            ))}
-        </div>
+                        {person.popupState && (
+                            <PopupCredit
+                                title={person.title}
+                                role={person.role}
+                                github={person.github}
+                                linkedin={person.linkedin}
+                                image={person.image}
+                                onClose={() => {
+                                    const newDonnée = [...donnée];
+                                    newDonnée[index].popupState = false;
+                                    setDonnée(newDonnée);
+                                }}
+                                isOpen={person.popupState}
+                            />
+                        )}
+                    </div>
+                ))
+            }
+        </div >
     );
 
 };
