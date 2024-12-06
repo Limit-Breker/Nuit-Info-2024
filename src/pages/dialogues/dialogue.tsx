@@ -9,12 +9,14 @@ import { speakerImage } from '../../constants/speakerImage';
 interface Phrase {
     personnage: 'marin' | 'lucie';
     texte: string;
+    illustration?: string;
 }
 
 interface Dialogue {
     titre: string;
     img: keyof typeof dialogueImage;
     phrases: Phrase[];
+    illustration?: string;
 }
 
 const Dialogue1: React.FC = () => {
@@ -26,7 +28,8 @@ const Dialogue1: React.FC = () => {
             phrases: (dialogue.phrases as Phrase[]).map((phrase: Phrase) => {
                 return {
                     personnage: phrase.personnage,
-                    texte: phrase.texte
+                    texte: phrase.texte,
+                    illustration: phrase.illustration ? phrase.illustration : "",
                 };
             })
         };
@@ -40,6 +43,9 @@ const Dialogue1: React.FC = () => {
     const imagePath: string = dialogueImage[currentDialogue.img];
 
     const currentPhrase = currentDialogue.phrases[currentPhraseIndex];
+
+    const illustrationSrc: string = currentPhrase.illustration && dialogueImage[currentPhrase.illustration as keyof typeof dialogueImage] || "";
+
 
     // Gestion du bouton Next
     const handleNext = () => {
@@ -82,6 +88,15 @@ const Dialogue1: React.FC = () => {
                 src={imagePath}
                 className="absolute top-0 left-0 w-[100vw] h-[100vw] object-cover brightness-50"
             />
+
+            {illustrationSrc && (
+                <div className="bg-white/30 my-auto border-2 z-10 backdrop-blur-2xl border-white rounded-xl flex flex-col items-center justify-center shadow-xl overflow-hidden">
+                    <img
+                        src={illustrationSrc}
+                        className="w-[20vw] h-[20vw] object-cover"
+                    />
+                </div >
+            )}
 
             <div className="bg-white/30 border-2 z-10 backdrop-blur-2xl border-white p-8 w-[45vw] rounded-xl gap-y-8 flex flex-col items-center justify-center shadow-xl">
                 <div className='flex flex-row items-center justify-between w-full gap-x-8'>
