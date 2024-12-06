@@ -7,19 +7,34 @@ interface Phrase {
     texte: string;
 }
 
+interface Dialogue {
+    titre: string;
+    img: string;
+    phrases: Phrase[];
+}
+
 const Dialogue1: React.FC = () => {
 
-    const dialogues = Dialogues.flatMap(dialogue => dialogue.phrases.map((phrase: Phrase) => {
+    const dialogues: Dialogue[] = Dialogues.map((dialogue: Dialogue) => {
         return {
-            personnage: phrase.personnage,
-            texte: phrase.texte
+            titre: dialogue.titre,
+            img: dialogue.img,
+            phrases: dialogue.phrases.map((phrase: Phrase) => {
+                return {
+                    personnage: phrase.personnage,
+                    texte: phrase.texte
+                };
+            })
         };
-    }));
+    });
 
     const [currentDialogueIndex, setCurrentDialogueIndex] = useState(0);
+    const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   
     // Récupère le dialogue actuel
     const currentDialogue = dialogues[currentDialogueIndex];
+
+    const currentPhrase = currentDialogue.phrases[currentPhraseIndex];
   
     // Gestion du bouton Next
     const handleNext = () => {
@@ -30,14 +45,25 @@ const Dialogue1: React.FC = () => {
       }
     };
 
+    const handleNextPhrase = () => {
+        if (currentPhraseIndex < currentDialogue.phrases.length - 1) {
+            setCurrentPhraseIndex(currentPhraseIndex + 1);
+        } else {
+            handleNext();
+            setCurrentPhraseIndex(0);
+        }
+    }   
+
     
     return (
-        <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-            <div style={{ marginBottom: "20px" }}>
-                <strong>{currentDialogue.personnage} :</strong> {currentDialogue.texte}
+        <div>
+            <div>{currentDialogue.titre}</div>
+            <img src={currentDialogue.img}/>
+            <div>
+                {currentPhrase.personnage} : {currentPhrase.texte}
             </div>
-            <button onClick={handleNext} style={{ padding: "10px 20px" }}>
-            Next
+            <button onClick={handleNextPhrase} style={{ padding: "10px 20px" }}>
+                Next
             </button>
         </div>
     );
