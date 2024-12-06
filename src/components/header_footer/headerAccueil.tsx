@@ -8,8 +8,8 @@ interface HeaderProps {
 const HeaderAccueil: React.FC<HeaderProps> = ({ }) => {
     const navigate = useNavigate();
 
-    function toTest() {
-        navigate('/test');
+    function dialogue() {
+        navigate('/dialogue');
     }
 
     return (
@@ -22,7 +22,7 @@ const HeaderAccueil: React.FC<HeaderProps> = ({ }) => {
                     <Link to="/captcha" className="text-black hover:text-normal-blue transition-colors font-Lato font-semibold text-base">Captcha</Link>
                 </div>
             </div>
-            <Confirm title="Demo redirection" couleur="blue" onClick={toTest} />
+            <Confirm title="C'est parti !" couleur="blue" onClick={dialogue} />
         </header>
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import Dialogues from './Dialogues.json';
 import { useState } from 'react';
+import HeaderAccueil from '../../components/header_footer/headerAccueil';
 
 interface Phrase {
     personnage: string;
@@ -30,19 +31,19 @@ const Dialogue1: React.FC = () => {
 
     const [currentDialogueIndex, setCurrentDialogueIndex] = useState(0);
     const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-  
+
     // Récupère le dialogue actuel
     const currentDialogue = dialogues[currentDialogueIndex];
 
     const currentPhrase = currentDialogue.phrases[currentPhraseIndex];
-  
+
     // Gestion du bouton Next
     const handleNext = () => {
-      if (currentDialogueIndex < dialogues.length - 1) {
-        setCurrentDialogueIndex(currentDialogueIndex + 1);
-      } else {
-        alert("Fin des dialogues !");
-      }
+        if (currentDialogueIndex < dialogues.length - 1) {
+            setCurrentDialogueIndex(currentDialogueIndex + 1);
+        } else {
+            alert("Fin des dialogues !");
+        }
     };
 
     const handleNextPhrase = () => {
@@ -52,13 +53,15 @@ const Dialogue1: React.FC = () => {
             handleNext();
             setCurrentPhraseIndex(0);
         }
-    }   
+    }
 
-    
+
     return (
-        <div>
+        <div className="flex-col flex items-center justify-start w-full max-w-[100vw] overflow-x-hidden relative">
+            <HeaderAccueil />
+
             <div>{currentDialogue.titre}</div>
-            <img src={currentDialogue.img}/>
+            <img src={currentDialogue.img} />
             <div>
                 {currentPhrase.personnage} : {currentPhrase.texte}
             </div>
