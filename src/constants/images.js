@@ -5,6 +5,8 @@ const titou2 = `${process.env.PUBLIC_URL}/images/perso/titou2.png`;
 const nisnis = `${process.env.PUBLIC_URL}/images/perso/nisnis.png`;
 const cricri = `${process.env.PUBLIC_URL}/images/perso/cricri.png`;
 const simsi = `${process.env.PUBLIC_URL}/images/perso/simsi.png`;
+const roro = `${process.env.PUBLIC_URL}/images/perso/roro.png`;
+const celia = `${process.env.PUBLIC_URL}/images/perso/celia.png`;
 
 export const persos = {
     nail,
@@ -14,4 +16,6 @@ export const persos = {
     nisnis,
     cricri,
     simsi,
+    roro,
+    celia,
 };

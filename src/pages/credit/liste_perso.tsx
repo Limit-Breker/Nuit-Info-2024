@@ -29,22 +29,22 @@ const ListePerso: React.FC = () => {
         popupState: false,
         image: persos.nisnis
     },
-    // {
-    //     title: "Romain BOUÏSSOU",
-    //     role: ["Scénariste designer"],
-    //     github: ["uNastyy"],
-    //     linkedin: ["romain-bouissou"],
-    //     popupState: false,
-    //     image: persos.
-    // },
-    // {
-    //     title: "Célia TOGNINI",
-    //     role: ["Scénariste designer"],
-    //     github: ["Cemailla"],
-    //     linkedin: ["célia-tognini-8ab182264"],
-    //     popupState: false,
-    //     image: persos.
-    // },
+    {
+        title: "Romain BOUÏSSOU",
+        role: ["Scénariste designer"],
+        github: ["uNastyy"],
+        linkedin: ["romain-bouissou"],
+        popupState: false,
+        image: persos.roro
+    },
+    {
+        title: "Célia TOGNINI",
+        role: ["Scénariste designer"],
+        github: ["Cemailla"],
+        linkedin: ["célia-tognini-8ab182264"],
+        popupState: false,
+        image: persos.celia
+    },
     {
         title: "Cédric LONGUET",
         role: ["Employé polyvalent"],
