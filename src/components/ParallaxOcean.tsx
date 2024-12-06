@@ -73,9 +73,7 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
                 <div />
             </div>
 
-            <img
-                src={process.env.PUBLIC_URL + "/images/vrai_bateau.svg"}
-                alt="bateau"
+            <div
                 style={{
                     zIndex: 30,
                     position: 'absolute',
@@ -83,7 +81,26 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
                     left: isFixBoat ? '40%' : `${Math.max(maxLeft, Math.min(maxRight, window.innerWidth - 500))}px`,
                     transition: 'left 0.3s ease-out',
                     animation: isFixBoat ? '' : 'tangage 2s infinite ease-in-out',
-                }} />
+                }}
+            >
+                {!isFixBoat && (
+                    <img
+                        src={process.env.PUBLIC_URL + "/images/speaker/jean-marin.svg"}
+                        alt="marin"
+                        className='absolute top-[180px] left-12 h-12 w-12 object-cover'
+                    />
+                )}
+                <img
+                    src={process.env.PUBLIC_URL + "/images/vrai_bateau.svg"}
+                    alt="bateau" />
+                {!isFixBoat && (
+                    <img
+                        src={process.env.PUBLIC_URL + "/images/speaker/lucie.svg"}
+                        alt="lucie"
+                        className='absolute top-[178px] right-12 h-12 w-12 object-cover'
+                    />
+                )}
+            </div>
 
             <img
                 src={process.env.PUBLIC_URL + "/images/vague1.svg"}
@@ -109,7 +126,7 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
                     left: `${Math.max(maxLeftVague, Math.min(maxRightVague, window.innerWidth - 500))}px`,
                     transition: 'left 1.5s ease-out',
                 }} />
-        </div>
+        </div >
     )
 }
 

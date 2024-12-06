@@ -13,14 +13,14 @@ const ListePerso: React.FC = () => {
         popupState: false,
         image: persos.cricri
     },
-    // {
-    //     title: "Sofia GRIBANOVA",
-    //     role: ["Graphiste"],
-    //     github: ["pavuchochek"],
-    //     linkedin: ["sofia-gribanova"],
-    //     popupState: false,
-    //     image: persos.
-    // },
+    {
+        title: "Sofia GRIBANOVA",
+        role: ["Graphiste"],
+        github: ["pavuchochek"],
+        linkedin: ["sofia-gribanova"],
+        popupState: false,
+        image: persos.sofia
+    },
     {
         title: "Yanis CROGUENNOC",
         role: ["Directeur des médias"],
@@ -95,7 +95,7 @@ const ListePerso: React.FC = () => {
         setDonnée(newDonnée);
     };
     return (
-        <div className="z-40 absolute top-[398px] left-[40%] flex flex-row gap-x-1">
+        <div className="z-40 absolute top-[398px] left-[41%] flex flex-row gap-x-1">
             {donnée.map((person, index) => (
                 <div key={index} className={`${person.popupState ? '' : 'hover:-translate-y-2'} transition-transform cursor-pointer`}>
                     <img
