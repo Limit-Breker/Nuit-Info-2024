@@ -44,6 +44,9 @@ const Dialogue1: React.FC = () => {
 
     const currentPhrase = currentDialogue.phrases[currentPhraseIndex];
 
+    const illustrationSrc: string = currentPhrase.illustration && dialogueImage[currentPhrase.illustration as keyof typeof dialogueImage] || "";
+
+
     // Gestion du bouton Next
     const handleNext = () => {
         if (currentDialogueIndex < (dialogues as Dialogue[]).length - 1) {
@@ -85,6 +88,15 @@ const Dialogue1: React.FC = () => {
                 src={imagePath}
                 className="absolute top-0 left-0 w-[100vw] h-[100vw] object-cover brightness-50"
             />
+
+            {illustrationSrc && (
+                <div className="bg-white/30 my-auto border-2 z-10 backdrop-blur-2xl border-white rounded-xl flex flex-col items-center justify-center shadow-xl">
+                    <img
+                        src={illustrationSrc}
+                        className="w-[20vw] h-[20vw] object-cover"
+                    />
+                </div >
+            )}
 
             <div className="bg-white/30 border-2 z-10 backdrop-blur-2xl border-white p-8 w-[45vw] rounded-xl gap-y-8 flex flex-col items-center justify-center shadow-xl">
                 <div className='flex flex-row items-center justify-between w-full gap-x-8'>

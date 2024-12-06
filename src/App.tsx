@@ -3,10 +3,8 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Accueil from './pages/accueil/accueil';
-import Test from './pages/test/test';
 import Dialogue from './pages/dialogues/dialogue';
 import Credit from './pages/credit/Credit';
-import CookieClicker from './pages/cookieClicker/CookieClicker';
 import CookieClic from './pages/cookieClicker/CookieClic';
 
 const App: React.FC = () => {
