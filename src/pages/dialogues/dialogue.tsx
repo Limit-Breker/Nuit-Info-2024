@@ -86,20 +86,20 @@ const Dialogue1: React.FC = () => {
 
             <img
                 src={imagePath}
-                className="absolute top-0 left-0 w-[100vw] h-[100vw] object-cover brightness-50"
+                className="absolute top-0 left-0 w-full h-full object-cover brightness-50"
             />
 
             {illustrationSrc && (
                 <div className="bg-white/30 my-auto border-2 z-10 backdrop-blur-2xl border-white rounded-xl flex flex-col items-center justify-center shadow-xl overflow-hidden">
                     <img
                         src={illustrationSrc}
-                        className="w-[20vw] h-[20vw] object-cover"
+                        className="w-[40vw] h-[40vw] md:w-[20vw] md:h-[20vw] object-cover"
                     />
                 </div >
             )}
 
-            <div className="bg-white/30 border-2 z-10 backdrop-blur-2xl border-white p-8 w-[45vw] rounded-xl gap-y-8 flex flex-col items-center justify-center shadow-xl">
-                <div className='flex flex-row items-center justify-between w-full gap-x-8'>
+            <div className="bg-white/30 border-2 z-10 backdrop-blur-2xl border-white p-4 md:p-8 w-[90vw] md:w-[45vw] rounded-xl gap-y-4 md:gap-y-8 flex flex-col items-center justify-center shadow-xl">
+                <div className='flex flex-col md:flex-row items-center justify-between w-full gap-y-4 md:gap-x-8'>
                     <div className='flex flex-col gap-y-2 items-end justify-center'>
                         <div className='flex items-center justify-center gap-x-1'>
                             <div className='h-2 w-2 bg-white/70 rounded-full' />
@@ -108,13 +108,13 @@ const Dialogue1: React.FC = () => {
                         </div>
                         <img
                             src={speakerImage[currentPhrase.personnage]}
-                            className="w-20 h-20 object-cover"
+                            className="w-16 h-16 md:w-20 md:h-20 object-cover"
                         />
                     </div>
 
-                    <div className='flex items-start justify-center flex-col gap-y-8 flex-1 w-full'>
-                        <p className='font-Mandali text-black text-base font-medium'>
-                            <span className='font-bold text-lg capitalize'>{currentPhrase.personnage} :</span> <br /> {currentPhrase.texte}
+                    <div className='flex items-start justify-center flex-col gap-y-4 md:gap-y-8 flex-1 w-full'>
+                        <p className='font-Mandali text-black text-sm md:text-base font-medium'>
+                            <span className='font-bold text-base md:text-lg capitalize'>{currentPhrase.personnage} :</span> <br /> {currentPhrase.texte}
                         </p>
                         <div className="flex w-full items-center justify-center gap-x-2">
                             <Confirm onClick={handleBackPhrase} title='Retour' couleur='gray' />
@@ -124,12 +124,11 @@ const Dialogue1: React.FC = () => {
 
                     <img
                         src={speakerImage[otherPersonnage]}
-                        className="w-20 h-20 object-cover"
+                        className="w-16 h-16 md:w-20 md:h-20 object-cover"
                     />
                 </div>
             </div >
         </div >
     );
 };
-
 export default Dialogue1;
