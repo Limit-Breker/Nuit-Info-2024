@@ -22,14 +22,16 @@ function Confirm({ title, couleur, onClick, classNameAddon }: { title: string, c
                 text-white
                 bg-black
                 hover:bg-light-blue
+                hover:text-black
                 focus:ring-light-blue`;
             break;
-        case 'brown':
+        case 'gray':
             baseClasses = `
                 text-black
-                bg-normal-blue
-                hover:bg-brown-hover
-                focus:ring-brown-border`;
+                bg-dark-gray
+                hover:bg-black
+                hover:text-white
+                focus:ring-light-blue`;
             break;
     }
 
