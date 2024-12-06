@@ -22,7 +22,7 @@ const HeaderAccueil: React.FC<HeaderProps> = ({ }) => {
     return (
         <header className="bg-none backdrop-blur p-4 md:p-6 flex flex-col md:flex-row md:justify-start md:gap-x-16 gap-0 justify-center items-center md:items-start px-4 md:px-16 fixed top-0 left-0 w-full z-50">
             <div className="flex flex-col md:flex-row items-center justify-between">
-                <h1 className="text-xl md:text-3xl font-bold text-normal-blue text-center md:text-left">Nuit de l'info 2024 | Limit Breker</h1>
+                <h1 className="text-xl md:text-2xl font-bold text-normal-blue text-center md:text-left">Nuit de l'info 2024 | Limit Breker</h1>
                 <button className="md:hidden text-2xl" onClick={toggleMenu}>
                     {isMenuOpen ? <FaTimes /> : <FaBars />}
                 </button>
