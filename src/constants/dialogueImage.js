@@ -5,11 +5,11 @@ const greenLungs = `${process.env.PUBLIC_URL}/images/dialogue/green-lungs.png`;
 const orangeLiver = `${process.env.PUBLIC_URL}/images/dialogue/orange-liver.png`;
 const acidification = `${process.env.PUBLIC_URL}/images/dialogue/acidification.png`;
 const algues = `${process.env.PUBLIC_URL}/images/dialogue/algues.png`;
-const biodiversite = `${process.env.PUBLIC_URL}/images/dialogue/biodiversite.png`;
-const coraux = `${process.env.PUBLIC_URL}/images/dialogue/coraux.png`;
+const biodiversite = `${process.env.PUBLIC_URL}/images/dialogue/biodiversite.jpg`;
+const coraux = `${process.env.PUBLIC_URL}/images/dialogue/coraux.jpg`;
 const courantsMarins = `${process.env.PUBLIC_URL}/images/dialogue/courants-marins.png`;
 const estuairesIntestins = `${process.env.PUBLIC_URL}/images/dialogue/estuaires-intestins.png`;
-const requins = `${process.env.PUBLIC_URL}/images/dialogue/requins.png`;
+const requins = `${process.env.PUBLIC_URL}/images/dialogue/requins.jpg`;
 
 export const dialogueImage = {
     blueHeart,

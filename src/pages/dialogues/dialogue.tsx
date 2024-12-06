@@ -90,7 +90,7 @@ const Dialogue1: React.FC = () => {
             />
 
             {illustrationSrc && (
-                <div className="bg-white/30 my-auto border-2 z-10 backdrop-blur-2xl border-white rounded-xl flex flex-col items-center justify-center shadow-xl">
+                <div className="bg-white/30 my-auto border-2 z-10 backdrop-blur-2xl border-white rounded-xl flex flex-col items-center justify-center shadow-xl overflow-hidden">
                     <img
                         src={illustrationSrc}
                         className="w-[20vw] h-[20vw] object-cover"
