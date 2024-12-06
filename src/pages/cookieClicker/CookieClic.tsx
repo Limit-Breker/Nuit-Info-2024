@@ -48,7 +48,7 @@ const CookieClic: React.FC = () => {
 
   const handleMissClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const whaleElement = document.getElementById("donut");
-    if (whaleElement && !whaleElement.contains(event.target as Node)) {
+    if (whaleElement && !whaleElement.contains(event.target as Node) && clicks > 0) {
       alert("Oops ! Vous avez raté le requin baleine! Comment osez vous faire cet afront à la nature ! On remets votre score à 0");
       setClicks(0);
       setCps(0);
