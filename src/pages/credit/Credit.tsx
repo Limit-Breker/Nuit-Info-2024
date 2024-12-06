@@ -8,7 +8,8 @@ const Credit: React.FC = () => {
             <HeaderAccueil />
 
             <ParallaxOcean isFixBoat />
-            <ListePerso></ListePerso>
+
+            <ListePerso />
         </div>
     );
 };
