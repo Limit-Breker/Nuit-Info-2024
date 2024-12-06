@@ -30,8 +30,13 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
     const maxTop = 150; // Position maximale (haut)
     const maxBottom = window.innerHeight - 600; // Position maximale (bas)
 
-    const maxLeftNuage = Math.max(-leftMargin, mouseX - 465); // Position minimale des nuages
-    const maxRightNuage = Math.min(mouseX - 250, window.innerWidth - rightMargin - 700); // Position maximale des nuages avec la marge droite de 100px
+    const moveRange = 200;
+    const nuageOffset = -650;
+    const maxLeftNuage = Math.max(-leftMargin, mouseX - 465 + nuageOffset); // Position minimale des nuages
+    const maxRightNuage = Math.min(
+        mouseX - 250 + nuageOffset,
+        window.innerWidth - rightMargin - 200
+    ); // Position maximale des nuages avec la marge droite de 100px
 
     const maxLeftVague = Math.max(-leftMargin, mouseX - 465); // Position minimale des nuages
     const maxRightVague = Math.min(mouseX - 250, window.innerWidth - rightMargin - 2700); // Position maximale des nuages avec la marge droite de 100px
@@ -50,10 +55,10 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
                 alt="nuages"
                 style={{
                     position: 'absolute',
-                    left: `${Math.max(maxLeftNuage, Math.min(maxRightNuage, window.innerWidth - 500))}px`,
+                    left: `${Math.max(maxLeftNuage, Math.min(maxRightNuage, window.innerWidth - 500))}px`, // Ajuste le mouvement à gauche et droite
                     transition: 'left 3s ease-out',
                 }}
-                className="top-28 w-full h-full object-contain" />
+                className="top-28 w-full object-cover" />
 
             <div className="wing left-wing" style={{
                 top: `${birdTop}px`,
@@ -72,7 +77,7 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
                 src={process.env.PUBLIC_URL + "/images/vrai_bateau.svg"}
                 alt="bateau"
                 style={{
-                    zIndex: 99,
+                    zIndex: 30,
                     position: 'absolute',
                     bottom: '400px',
                     left: isFixBoat ? '40%' : `${Math.max(maxLeft, Math.min(maxRight, window.innerWidth - 500))}px`,
