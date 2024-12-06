@@ -31,15 +31,7 @@ const Dialogue1: React.FC = () => {
     };
 
     
-    return (/*
-        <div>
-            {tata.map((phrase, index) => (
-                <div key={index}>
-                    <div className="text-xl font-bold font-Lato">{phrase.personnage}</div>
-                    <div className="font-Mandali">{phrase.texte}</div>
-                </div>
-            ))}
-        </div>*/
+    return (
         <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
             <div style={{ marginBottom: "20px" }}>
                 <strong>{currentDialogue.personnage} :</strong> {currentDialogue.texte}
