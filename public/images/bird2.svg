@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="74.666664"
+   height="57.599998"
+   viewBox="0 0 74.666664 57.599998"
+   sodipodi:docname="bird2.png"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="74.666664"
+       height="57.599998"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <path
+       style="fill:#000000"
+       d="M 33.35346,50.004833 C 31.816407,49.576906 29.902227,47.469878 28.431482,44.586977 L 26.024745,39.869385 30.145592,23.799322 C 32.412058,14.960788 34.474457,7.1746737 34.7287,6.4968457 c 0.340257,-0.907142 2.170468,-0.802115 6.934465,0.397939 3.559712,0.896694 6.458872,1.93128 6.442577,2.29908 -0.142605,3.2189223 -10.43939,41.1098893 -11.218807,41.2839013 -0.560028,0.125032 -2.150092,-0.08779 -3.533475,-0.472933 z"
+       id="path1" />
+  </g>
+</svg>

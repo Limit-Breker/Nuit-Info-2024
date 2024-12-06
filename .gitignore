@@ -1,0 +1,10 @@
+.idea
+*.env
+*.vscode
+__pycache__
+node_modules
+
+.scannerwork
+scanner.bat
+
+*.db

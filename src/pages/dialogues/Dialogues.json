@@ -1,0 +1,355 @@
+[
+    {
+        "titre": "Le coeur et les courants maritimes",
+        "img": "blueHeart",
+        "phrases":[
+            {
+                "personnage": "lucie",
+                "texte": 
+                "Le cœur de notre patient bat à une allure incroyablement faible, en dessous de 50 battements par minute. Sais-tu ce que cela implique ?"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Pas vraiment, mais ça n’a pas l’air bon."
+            },
+            {
+                "personnage": "lucie",
+                "texte":
+                "C’est ce qu’on appelle une bradycardie. Quand le cœur bat trop lentement, il n’alimente pas suffisamment le corps en oxygène. Ça peut causer des vertiges, des évanouissements et même conduire à une insuffisance cardiaque."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Une insuffisance cardiaque ?"
+            },
+            {
+                "personnage": "lucie",
+                "texte":
+                "Oui, le sang n’est plus pompé correctement, ce qui peut provoquer un œdème, une accumulation de liquide qui rend la respiration difficile. Et si cela empire, il risque des arrêts cardiaques ou des troubles graves comme la tachycardie ventriculaire."
+            },
+            {
+                "personnage": "marin",
+                "texte": "C’est comme si un courant marin essentiel ralentissait ou s’arrêtait complètement !",
+                "illustration": "courantsMarins"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Ah, ça te parle mieux en termes marins, hein ?"
+            },
+            {
+                "personnage": "marin",
+                "texte":
+                "Exactement ! Si un courant océanique comme le  Gulf Stream ralentit trop, ça perturbe tout : le climat change, les tempêtes deviennent plus violentes, et l’écosystème marin tout entier est menacé."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Intéressant. Alors pour l’océan, un courant comme le Gulf Stream, c’est un peu comme le cœur pour un humain ?"
+            },
+            {
+                "personnage": "marin",
+                "texte":
+                "Tout à fait ! Les courants redistribuent la chaleur entre l’équateur et les pôles, comme le cœur distribue l’oxygène. Sans eux, les climats régionaux deviennent extrêmes et imprévisibles."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Et ça affecte directement la vie marine, j’imagine ?"
+            },
+            {
+                "personnage": "marin",
+                "texte":
+                "Oui. Moins de courants signifie moins de mélange des eaux. Le phytoplancton, à la base de la chaîne alimentaire, ne se développe pas correctement. Sans lui, la biodiversité marine s’effondre.",
+                "illustration": "biodiversite"
+            },
+            {
+                "personnage": "lucie",
+                "texte":
+                "Donc, un courant marin qui faiblit, c’est comme un cœur qui ralentit. L’oxygène dans le sang ou les nutriments dans l’eau ne sont plus distribués, et tout l’écosystème en pâtit.",
+                "illustration": "courantsMarins"
+            },
+            {
+                "personnage": "marin",
+                "texte":
+                "Exactement. Et comme la bradycardie peut entraîner des chutes et des blessures chez un humain, des courants marins perturbés peuvent provoquer des catastrophes naturelles comme des inondations et des tempêtes plus fréquentes."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Alors, on doit protéger les courants marins comme on surveille un cœur en bradycardie. Les deux sont essentiels à la vie."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Bien dit. Je vais méditer là-dessus pendant ma prochaine plongée. Et toi ?"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Moi, je vais rappeler à ce patient de surveiller son cœur. Après tout, protéger son équilibre interne, c’est comme préserver celui de l’océan."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Deux écosystèmes, une même règle : l’équilibre avant tout."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Exactement !"
+            }
+        ]
+    },
+    {
+        "titre": "Les poumons et les algues marines",
+        "img": "greenLungs",
+        "phrases": [
+            {
+                "personnage": "lucie",
+                "texte": "Notre patient a un système pulmonaire inefficace, il risque un manque d’oxygénation et cela peut entraîner des conséquences terribles."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Comment ça ?"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Et bien, les poumons servent à oxygéner le corps humain, en récupérant l’oxygène dans l’air et en expulsant du dioxyde de carbone (CO2). Mais là, comme les poumons ne sont pas efficaces, y'a du gaz carbonique qui s’accumule."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Je suppose que ce n'est pas une bonne chose."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Ben ça laisse moins de place à l’oxygène dans le sang, et en plus le gaz carbonique acidifie le sang, ce qui n’est vraiment pas bon pour le corps humain.",
+                "illustration": "acidification"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Alors ça, le CO2, c’est un cauchemar, dans les océans on a le même problème à cause des émissions de dioxyde carbone."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Y’a aussi de l’acidification ?",
+                "illustration": "acidification"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Oui, mais le souci c’est que la faune et la flore n'aiment pas du tout ça. Et ça peut avoir des conséquences même sur nous dans le futur."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Comme quoi par exemple ?"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Un exemple ? Ok"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "En effet, si ça continue comme ça, ça va devenir un gros problème."
+            }
+        ]
+    },
+    {
+        "titre": "Le foie et les zones intertidales",
+        "img": "orangeLiver",
+        "phrases": [
+            {
+                "personnage": "lucie",
+                "texte": "Ouaaah, regarde ce foie, marin. Il est complètement saturé, on dirait qu’il n’arrive plus à faire son boulot."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Pourquoi c’est si grave ?"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Le foie, c’est un organe vital. Il filtre les toxines, transforme les nutriments pour qu’ils soient utilisables, et il produit des substances comme la bile, essentielle à la digestion. Quand il ne fonctionne plus bien, les toxines s’accumulent et le corps entier commence à dérailler."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Hmm... Ça me fait penser aux mangroves et aux marais salants dans l’océan."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Ah oui ? Pourquoi ça ?"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Ces zones intertidales jouent un rôle crucial : elles filtrent les polluants de l’eau, protègent les côtes contre l’érosion, et stabilisent les sédiments. Quand elles disparaissent, la pollution s’aggrave et l’écosystème marin en souffre."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Oh, je vois le parallèle ! Le foie filtre les toxines pour protéger le corps, tout comme les mangroves filtrent l’eau pour préserver les écosystèmes marins. Et dans les deux cas, si le filtre est endommagé, c’est tout l’équilibre qui est compromis."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Exactement. Et ce qui est effrayant, c’est qu’une fois que les mangroves ou les marais sont détruits, il est très difficile de les restaurer complètement, tout comme un foie gravement endommagé."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Je trouve que le corps humain et l’océan se ressemblent plus que ce qu’on pourrait penser ! Dans les deux cas, il faut préserver ces systèmes de filtration avant qu’il ne soit trop tard."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Mais oui c’est clair ! Ça me donne envie de m’investir encore plus pour protéger les zones intertidales et de prendre encore plus soin de mon foie."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "On a tous des filtres à chouchouter, que ce soit dans nos corps ou dans la nature !"
+            }
+        ]
+    },
+    {
+        "titre": "Les reins et les récifs coralliens",
+        "img": "coralKidney",
+        "phrases": [
+            {
+                "personnage": "lucie",
+                "texte": "marin ! Regarde ces reins ! Ils sont complètement saturés, c’est comme si l’écosystème interne de ce corps était en train de s’effondrer."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Pourquoi ça ?"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Les reins filtrent les déchets et maintiennent un équilibre chimique essentiel. S’ils ne fonctionnent plus correctement, les toxines s’accumulent et le corps entier en souffre."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Ah, donc dans le corps humain, les reins, c’est comme les récifs coralliens des océans ?",
+                "illustration": "coraux"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Oh vraiment ?"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Mais oui ! Les récifs coralliens équilibrent tout l’écosystème marin. Ils abritent une grande diversité de vie et filtrent l’eau pour la rendre habitable. Tu vois le parallèle ?",
+                "illustration": "coraux"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Oui ! Sans reins, le corps devient toxique, tout comme l’océan devient invivable sans récifs. Les deux jouent un rôle de filtre vital pour leur écosystème."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Et si ces reins sont trop endommagés, tout comme les récifs blanchis, la restauration est difficile. Cela perturbe tout l’environnement autour d’eux."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Alors, pour préserver ce corps, on doit aider ces reins à fonctionner, un peu comme on devrait protéger les récifs pour maintenir l’équilibre des océans."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Exactement. Les reins et les récifs nous rappellent que chaque écosystème, petit ou grand, a besoin de ses gardiens pour rester en bonne santé."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Bien dit ! Maintenant, essayons de sauver ces reins comme on sauverait un récif menacé."
+            }
+        ]
+    },
+    {
+        "titre": "Les prédateurs marins",
+        "img": "blueImunity",
+        "phrases": [
+            {
+                "personnage": "lucie",
+                "texte": "Woaaawww, cette personne n’a pas un microbiote très peuplé, c’est peut-être pour cela qu’elle est en mauvaise santé"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Pourquoi donc ?"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Le microbiote sert à réguler les intéractions entre les micro-organismes pour maintenir un équilibre biologique interne. Il sert aussi à avoir une diversité nombreuse d’organismes ce qui aide le système immunitaire à faire face à un virus lorsqu’il entre dans le corps humain"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Ah, donc le microbiote c’est comme les requins du corps humain.",
+                "illustration": "requins"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Les requins servent aussi de régulateurs ?",
+                "illustration": "requins"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Oui puisque dans l’océan, sans les requins ou autres prédateurs marins, les herbivores mangent toutes les algues sans prédateurs pour les en empêcher.",
+                "illustration": "algues"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Donc, sans les requins, l’écosystème marin se dérègle?",
+                "illustration": "requins"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Exactement ! Il faut protéger les prédateurs marins comme on protégerait son microbiote."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "En maintenant une diversité et un équilibre dans les deux cas, on préserve la santé, que ce soit celle de notre corps ou celle des océans."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Eh bien, je vais peut-être aussi manger un peu plus de fibres pour chouchouter mon microbiote !"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Bonne idée ! Le respect de la diversité, que ce soit dans nos assiettes ou dans l’océan, c’est la clé pour éviter les déséquilibres. Après tout, on fait tous partie d’un grand écosystème, non ?"
+            }
+        ]
+    },
+    {
+        "titre": "Les intestins et les estuaires",
+        "img": "estuairesIntestins",
+        "phrases": [
+            {
+                "personnage": "lucie",
+                "texte": "Eh bah, cette personne a un intestin qui ne fonctionne pas bien, c’est peut-être pour ça qu’elle a des problèmes."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Pourquoi donc ?"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "L’intestin est le lieu de passage et d’échange où beaucoup de choses se mélangent : les nutriments, les bactéries, et même les toxines. S’il ne fait pas bien son travail de filtre et de régulation, tout peut partir en vrille."
+            },
+            {
+                "personnage": "marin",
+                "texte": "Oh, donc l’intestin, c’est l’estuaire du corps humain ?"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "En quoi ?"
+            },
+            {
+                "personnage": "marin",
+                "texte": "En fait, les estuaires sont les zones de transition entre les rivières et l’océan. Ils servent notamment à filtrer les nutriments, piéger les polluants et nourrir une biodiversité incroyable. Sans eux, les écosystèmes marins des océans souffrent énormément.",
+                "illustration": "biodiversite"
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Donc, si on pollue les estuaires, c’est un peu comme si on mangeait trop de malbouffe et qu’on surchargeait notre intestin ?"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Exactement ! Les estuaires finissent par être saturés. Résultat : des toxines partout et un écosystème malade."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "C’est fou de voir à quel point tout est lié. On devrait mieux prendre soin des estuaires et de notre intestin, alors !"
+            },
+            {
+                "personnage": "marin",
+                "texte": "Tout à fait. Plus de fibres pour ton intestin et moins de déchets pour les estuaires."
+            },
+            {
+                "personnage": "lucie",
+                "texte": "Allez, à partir de maintenant, je respecte mon intestin comme un petit estuaire. Respectons la biodiversité dedans et dehors.",
+                "illustration": "biodiversite"
+            }
+        ]
+    }
+]

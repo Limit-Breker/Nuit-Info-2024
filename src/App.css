@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tangage {
+  0% {
+    transform: rotate(-3deg);
+  }
+
+  25% {
+    transform: rotate(3deg);
+  }
+
+  50% {
+    transform: rotate(-3deg);
+  }
+
+  75% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes flap-left-wing {
+  0% {
+    transform: rotate(-80deg);
+  }
+
+  50% {
+    transform: rotate(-35deg);
+  }
+
+  100% {
+    transform: rotate(-80deg);
+  }
+}
+
+@keyframes flap-right-wing {
+  0% {
+    transform: rotate(60deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+.wing {
+  position: absolute;
+  top: 0;
+  width: 14px;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 60px;
+  transform-origin: bottom center;
+}
+
+.left-wing {
+  animation: flap-left-wing 0.5s infinite ease-in-out;
+  transform: rotate(-40deg);
+}
+
+.right-wing {
+  animation: flap-right-wing 0.5s infinite ease-in-out;
+  transform: rotate(20deg);
+}
+
+.wing div {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
