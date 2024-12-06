@@ -3,10 +3,9 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Accueil from './pages/accueil/accueil';
-import Test from './pages/test/test';
 import Dialogue from './pages/dialogues/dialogue';
 import Credit from './pages/credit/Credit';
-import CookieClicker from './pages/cookieClicker/CookieClicker';
+import Podcast from './pages/podcast/podcast';
 import CookieClic from './pages/cookieClicker/CookieClic';
 import Port from "./pages/port/Port";
 
@@ -23,6 +22,7 @@ const App: React.FC = () => {
                         <Route path="/cookieClicker" element={<CookieClic />} />
                         <Route path="/dialogue" element={<Dialogue />} />
                         <Route path="/credit" element={<Credit />} />
+                        <Route path="/podcast" element={<Podcast />} />
                         <Route path="/port" element={<Port />} />
                     </Routes>
                 </div>

@@ -9,6 +9,7 @@ interface ModalProps {
     linkedin: React.ReactNode;
     role: React.ReactNode;
     className?: string;
+    image?: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -19,6 +20,7 @@ const Modal: React.FC<ModalProps> = ({
     github,
     linkedin,
     className,
+    image,
 }) => {
 
     if (!isOpen) return null;
@@ -33,6 +35,7 @@ const Modal: React.FC<ModalProps> = ({
                     <div className={`p-4 ${className}`}>
                         {role}
                     </div>
+                    <img src={image} alt={title} className="w-28 h-28 object-contain" />
                     <button type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center" onClick={onClose}>
                         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />

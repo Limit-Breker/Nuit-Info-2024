@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import HeaderAccueil from "../../components/header_footer/headerAccueil";
 
 const CookieClic: React.FC = () => {
   const [clicks, setClicks] = useState(0);
@@ -93,87 +94,91 @@ const CookieClic: React.FC = () => {
   });
 
   return (
-    <div
-      className="relative w-screen h-screen bg-gray-800 text-white overflow-hidden"
-      onClick={handleMissClick} // Detect missed clicks here
-    >
-      <div
-        className="relative w-64 h-64 cursor-pointer"
-        style={getPositionStyle(positions.image)}
-        onClick={(e) => {
-          e.stopPropagation(); // Prevent the click from propagating to the parent
-          handleClick();
-        }}
-      >
-        <img
-          id="donut"
-          src="/requin_baleine.png"
-          alt="Requin Baleine.png"
-          className="w-full h-full object-contain transition-transform duration-300 transform hover:scale-110"
-        />
-        <audio id="audio" src="/bruitbaleine1.mp4" />
-        <audio id="audio2" src="/bruitbaleine2.mp4" />
-        <audio id="audio3" src="/bruitbaleine3.mp4" />
-        <audio id="audio4" src="/bruitbaleine4.mp4" />
-      </div>
+    <div className="flex-col flex items-center justify-end pt-24 w-full max-w-[100vw] overflow-hidden relative min-h-[100vh] bg-gray-800">
+      <HeaderAccueil />
 
       <div
-        id="clicks"
-        className="text-2xl text-yellow-400"
-        style={getPositionStyle(positions.clicks)}
+        className="relative w-screen h-screen text-white overflow-hidden"
+        onClick={handleMissClick} // Detect missed clicks here
       >
-        Requin Baleines: {clicks}
-      </div>
-
-      <div
-        id="cps"
-        className="text-xl text-gray-400"
-        style={getPositionStyle(positions.cps)}
-      >
-        CPS: {cps}
-      </div>
-
-      <div
-        id="multiplier"
-        className="text-xl text-green-400"
-        style={getPositionStyle(positions.multiplier)}
-      >
-        Multiplier: x{multiplier}
-      </div>
-
-      <button
-        className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-yellow-400 flex items-center justify-center space-x-2"
-        onClick={handleMultClick}
-        style={getPositionStyle(positions.button1)}
-      >
-        <span>Increase Multiplier</span>
-        <span className="flex items-center space-x-1">
-          <span>{costMultiplier}</span>
+        <div
+          className="relative w-64 h-64 cursor-pointer"
+          style={getPositionStyle(positions.image)}
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent the click from propagating to the parent
+            handleClick();
+          }}
+        >
           <img
-            id="multiplier-icon"
+            id="donut"
             src="/requin_baleine.png"
             alt="Requin Baleine.png"
-            className="w-8 h-8"
+            className="w-full h-full object-contain transition-transform duration-300 transform hover:scale-110"
           />
-        </span>
-      </button>
+          <audio id="audio" src="/bruitbaleine1.mp4" />
+          <audio id="audio2" src="/bruitbaleine2.mp4" />
+          <audio id="audio3" src="/bruitbaleine3.mp4" />
+          <audio id="audio4" src="/bruitbaleine4.mp4" />
+        </div>
 
-      <button
-        className="bg-blue-500 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-blue-400 flex items-center justify-center space-x-2"
-        onClick={handleAutoClick}
-        style={getPositionStyle(positions.button2)}
-      >
-        <span>Add Auto-Clicker</span>
-        <span className="flex items-center space-x-1">
-          <span>{costAutoClicker}</span>
-          <img
-            id="autoclicker-icon"
-            src="/requin_baleine.png"
-            alt="Requin Baleine.png"
-            className="w-8 h-8"
-          />
-        </span>
-      </button>
+        <div
+          id="clicks"
+          className="text-2xl text-yellow-400"
+          style={getPositionStyle(positions.clicks)}
+        >
+          Requin Baleines: {clicks}
+        </div>
+
+        <div
+          id="cps"
+          className="text-xl text-gray-400"
+          style={getPositionStyle(positions.cps)}
+        >
+          CPS: {cps}
+        </div>
+
+        <div
+          id="multiplier"
+          className="text-xl text-green-400"
+          style={getPositionStyle(positions.multiplier)}
+        >
+          Multiplier: x{multiplier}
+        </div>
+
+        <button
+          className="bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-yellow-400 flex items-center justify-center space-x-2"
+          onClick={handleMultClick}
+          style={getPositionStyle(positions.button1)}
+        >
+          <span>Increase Multiplier</span>
+          <span className="flex items-center space-x-1">
+            <span>{costMultiplier}</span>
+            <img
+              id="multiplier-icon"
+              src="/requin_baleine.png"
+              alt="Requin Baleine.png"
+              className="w-8 h-8"
+            />
+          </span>
+        </button>
+
+        <button
+          className="bg-blue-500 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-blue-400 flex items-center justify-center space-x-2"
+          onClick={handleAutoClick}
+          style={getPositionStyle(positions.button2)}
+        >
+          <span>Add Auto-Clicker</span>
+          <span className="flex items-center space-x-1">
+            <span>{costAutoClicker}</span>
+            <img
+              id="autoclicker-icon"
+              src="/requin_baleine.png"
+              alt="Requin Baleine.png"
+              className="w-8 h-8"
+            />
+          </span>
+        </button>
+      </div>
     </div>
   );
 };

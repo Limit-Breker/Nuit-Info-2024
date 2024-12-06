@@ -28,7 +28,8 @@
             },
             {
                 "personnage": "marin",
-                "texte": "C’est comme si un courant marin essentiel ralentissait ou s’arrêtait complètement !"
+                "texte": "C’est comme si un courant marin essentiel ralentissait ou s’arrêtait complètement !",
+                "illustration": "courantsMarins"
             },
             {
                 "personnage": "lucie",
@@ -55,12 +56,14 @@
             {
                 "personnage": "marin",
                 "texte":
-                "Oui. Moins de courants signifie moins de mélange des eaux. Le phytoplancton, à la base de la chaîne alimentaire, ne se développe pas correctement. Sans lui, la biodiversité marine s’effondre."
+                "Oui. Moins de courants signifie moins de mélange des eaux. Le phytoplancton, à la base de la chaîne alimentaire, ne se développe pas correctement. Sans lui, la biodiversité marine s’effondre.",
+                "illustration": "biodiversite"
             },
             {
                 "personnage": "lucie",
                 "texte":
-                "Donc, un courant marin qui faiblit, c’est comme un cœur qui ralentit. L’oxygène dans le sang ou les nutriments dans l’eau ne sont plus distribués, et tout l’écosystème en pâtit."
+                "Donc, un courant marin qui faiblit, c’est comme un cœur qui ralentit. L’oxygène dans le sang ou les nutriments dans l’eau ne sont plus distribués, et tout l’écosystème en pâtit.",
+                "illustration": "courantsMarins"
             },
             {
                 "personnage": "marin",
@@ -111,7 +114,8 @@
             },
             {
                 "personnage": "lucie",
-                "texte": "Ben ça laisse moins de place à l’oxygène dans le sang, et en plus le gaz carbonique acidifie le sang, ce qui n’est vraiment pas bon pour le corps humain."
+                "texte": "Ben ça laisse moins de place à l’oxygène dans le sang, et en plus le gaz carbonique acidifie le sang, ce qui n’est vraiment pas bon pour le corps humain.",
+                "illustration": "acidification"
             },
             {
                 "personnage": "marin",
@@ -119,7 +123,8 @@
             },
             {
                 "personnage": "lucie",
-                "texte": "Y’a aussi de l’acidification ?"
+                "texte": "Y’a aussi de l’acidification ?",
+                "illustration": "acidification"
             },
             {
                 "personnage": "marin",
@@ -207,7 +212,8 @@
             },
             {
                 "personnage": "marin",
-                "texte": "Ah, donc dans le corps humain, les reins, c’est comme les récifs coralliens des océans ?"
+                "texte": "Ah, donc dans le corps humain, les reins, c’est comme les récifs coralliens des océans ?",
+                "illustration": "coraux"
             },
             {
                 "personnage": "lucie",
@@ -215,7 +221,8 @@
             },
             {
                 "personnage": "marin",
-                "texte": "Mais oui ! Les récifs coralliens équilibrent tout l’écosystème marin. Ils abritent une grande diversité de vie et filtrent l’eau pour la rendre habitable. Tu vois le parallèle ?"
+                "texte": "Mais oui ! Les récifs coralliens équilibrent tout l’écosystème marin. Ils abritent une grande diversité de vie et filtrent l’eau pour la rendre habitable. Tu vois le parallèle ?",
+                "illustration": "coraux"
             },
             {
                 "personnage": "lucie",
@@ -257,19 +264,23 @@
             },
             {
                 "personnage": "marin",
-                "texte": "Ah, donc le microbiote c’est comme les requins du corps humain."
+                "texte": "Ah, donc le microbiote c’est comme les requins du corps humain.",
+                "illustration": "requins"
             },
             {
                 "personnage": "lucie",
-                "texte": "Les requins servent aussi de régulateurs ?"
+                "texte": "Les requins servent aussi de régulateurs ?",
+                "illustration": "requins"
             },
             {
                 "personnage": "marin",
-                "texte": "Oui puisque dans l’océan, sans les requins ou autres prédateurs marins, les herbivores mangent toutes les algues sans prédateurs pour les en empêcher."
+                "texte": "Oui puisque dans l’océan, sans les requins ou autres prédateurs marins, les herbivores mangent toutes les algues sans prédateurs pour les en empêcher.",
+                "illustration": "algues"
             },
             {
                 "personnage": "lucie",
-                "texte": "Donc, sans les requins, l’écosystème marin se dérègle?"
+                "texte": "Donc, sans les requins, l’écosystème marin se dérègle?",
+                "illustration": "requins"
             },
             {
                 "personnage": "marin",
@@ -315,7 +326,8 @@
             },
             {
                 "personnage": "marin",
-                "texte": "En fait, les estuaires sont les zones de transition entre les rivières et l’océan. Ils servent notamment à filtrer les nutriments, piéger les polluants et nourrir une biodiversité incroyable. Sans eux, les écosystèmes marins des océans souffrent énormément."
+                "texte": "En fait, les estuaires sont les zones de transition entre les rivières et l’océan. Ils servent notamment à filtrer les nutriments, piéger les polluants et nourrir une biodiversité incroyable. Sans eux, les écosystèmes marins des océans souffrent énormément.",
+                "illustration": "biodiversite"
             },
             {
                 "personnage": "lucie",
@@ -335,7 +347,8 @@
             },
             {
                 "personnage": "lucie",
-                "texte": "Allez, à partir de maintenant, je respecte mon intestin comme un petit estuaire. Respectons la biodiversité dedans et dehors."
+                "texte": "Allez, à partir de maintenant, je respecte mon intestin comme un petit estuaire. Respectons la biodiversité dedans et dehors.",
+                "illustration": "biodiversite"
             }
         ]
     }
