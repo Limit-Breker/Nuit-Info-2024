@@ -88,5 +88,255 @@
                 "texte": "Exactement !"
             }
         ]
+    },
+    {
+        "titre": "Les poumons et les algues marines",
+        "img": "green-lungs",
+        "phrases": [
+            {
+                "personnage": "Lucie",
+                "texte": "Notre patient a un système pulmonaire inefficace, il risque un manque d’oxygénation et cela peut entraîner des conséquences terribles."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Comment ça ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Et bien, les poumons servent à oxygéner le corps humain, en récupérant l’oxygène dans l’air et en expulsant du dioxyde de carbone (CO2). Mais là, comme les poumons ne sont pas efficaces, y'a du gaz carbonique qui s’accumule."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Je suppose que ce n'est pas une bonne chose."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Ben ça laisse moins de place à l’oxygène dans le sang, et en plus le gaz carbonique acidifie le sang, ce qui n’est vraiment pas bon pour le corps humain."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Alors ça, le CO2, c’est un cauchemar, dans les océans on a le même problème à cause des émissions de dioxyde carbone."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Y’a aussi de l’acidification ?"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Oui, mais le souci c’est que la faune et la flore n'aiment pas du tout ça. Et ça peut avoir des conséquences même sur nous dans le futur."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Comme quoi par exemple ?"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Un exemple ? Ok"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "En effet, si ça continue comme ça, ça va devenir un gros problème."
+            }
+        ]
+    },
+    {
+        "titre": "Le foie et les zones intertidales",
+        "img": "orange-liver",
+        "phrases": [
+            {
+                "personnage": "Lucie",
+                "texte": "Ouaaah, regarde ce foie, Marin. Il est complètement saturé, on dirait qu’il n’arrive plus à faire son boulot."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Pourquoi c’est si grave ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Le foie, c’est un organe vital. Il filtre les toxines, transforme les nutriments pour qu’ils soient utilisables, et il produit des substances comme la bile, essentielle à la digestion. Quand il ne fonctionne plus bien, les toxines s’accumulent et le corps entier commence à dérailler."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Hmm... Ça me fait penser aux mangroves et aux marais salants dans l’océan."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Ah oui ? Pourquoi ça ?"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Ces zones intertidales jouent un rôle crucial : elles filtrent les polluants de l’eau, protègent les côtes contre l’érosion, et stabilisent les sédiments. Quand elles disparaissent, la pollution s’aggrave et l’écosystème marin en souffre."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Oh, je vois le parallèle ! Le foie filtre les toxines pour protéger le corps, tout comme les mangroves filtrent l’eau pour préserver les écosystèmes marins. Et dans les deux cas, si le filtre est endommagé, c’est tout l’équilibre qui est compromis."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Exactement. Et ce qui est effrayant, c’est qu’une fois que les mangroves ou les marais sont détruits, il est très difficile de les restaurer complètement, tout comme un foie gravement endommagé."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Je trouve que le corps humain et l’océan se ressemblent plus que ce qu’on pourrait penser ! Dans les deux cas, il faut préserver ces systèmes de filtration avant qu’il ne soit trop tard."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Mais oui c’est clair ! Ça me donne envie de m’investir encore plus pour protéger les zones intertidales et de prendre encore plus soin de mon foie."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "On a tous des filtres à chouchouter, que ce soit dans nos corps ou dans la nature !"
+            }
+        ]
+    },
+    {
+        "titre": "Les reins et les récifs coralliens",
+        "img": "coral-kidney",
+        "phrases": [
+            {
+                "personnage": "Lucie",
+                "texte": "Marin ! Regarde ces reins ! Ils sont complètement saturés, c’est comme si l’écosystème interne de ce corps était en train de s’effondrer."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Pourquoi ça ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Les reins filtrent les déchets et maintiennent un équilibre chimique essentiel. S’ils ne fonctionnent plus correctement, les toxines s’accumulent et le corps entier en souffre."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Ah, donc dans le corps humain, les reins, c’est comme les récifs coralliens des océans ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Oh vraiment ?"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Mais oui ! Les récifs coralliens équilibrent tout l’écosystème marin. Ils abritent une grande diversité de vie et filtrent l’eau pour la rendre habitable. Tu vois le parallèle ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Oui ! Sans reins, le corps devient toxique, tout comme l’océan devient invivable sans récifs. Les deux jouent un rôle de filtre vital pour leur écosystème."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Et si ces reins sont trop endommagés, tout comme les récifs blanchis, la restauration est difficile. Cela perturbe tout l’environnement autour d’eux."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Alors, pour préserver ce corps, on doit aider ces reins à fonctionner, un peu comme on devrait protéger les récifs pour maintenir l’équilibre des océans."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Exactement. Les reins et les récifs nous rappellent que chaque écosystème, petit ou grand, a besoin de ses gardiens pour rester en bonne santé."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Bien dit ! Maintenant, essayons de sauver ces reins comme on sauverait un récif menacé."
+            }
+        ]
+    },
+    {
+        "titre": "Les prédateurs marins",
+        "img": "blue-imunity",
+        "phrases": [
+            {
+                "personnage": "Lucie",
+                "texte": "Woaaawww, cette personne n’a pas un microbiote très peuplé, c’est peut-être pour cela qu’elle est en mauvaise santé"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Pourquoi donc ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Le microbiote sert à réguler les intéractions entre les micro-organismes pour maintenir un équilibre biologique interne. Il sert aussi à avoir une diversité nombreuse d’organismes ce qui aide le système immunitaire à faire face à un virus lorsqu’il entre dans le corps humain"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Ah, donc le microbiote c’est comme les requins du corps humain."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Les requins servent aussi de régulateurs ?"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Oui puisque dans l’océan, sans les requins ou autres prédateurs marins, les herbivores mangent toutes les algues sans prédateurs pour les en empêcher."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Donc, sans les requins, l’écosystème marin se dérègle?"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Exactement ! Il faut protéger les prédateurs marins comme on protégerait son microbiote."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "En maintenant une diversité et un équilibre dans les deux cas, on préserve la santé, que ce soit celle de notre corps ou celle des océans."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Eh bien, je vais peut-être aussi manger un peu plus de fibres pour chouchouter mon microbiote !"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Bonne idée ! Le respect de la diversité, que ce soit dans nos assiettes ou dans l’océan, c’est la clé pour éviter les déséquilibres. Après tout, on fait tous partie d’un grand écosystème, non ?"
+            }
+        ]
+    },
+    {
+        "titre": "Les intestins et les estuaires",
+        "img": "estuaires-intestins",
+        "phrases": [
+            {
+                "personnage": "Lucie",
+                "texte": "Eh bah, cette personne a un intestin qui ne fonctionne pas bien, c’est peut-être pour ça qu’elle a des problèmes."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Pourquoi donc ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "L’intestin est le lieu de passage et d’échange où beaucoup de choses se mélangent : les nutriments, les bactéries, et même les toxines. S’il ne fait pas bien son travail de filtre et de régulation, tout peut partir en vrille."
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Oh, donc l’intestin, c’est l’estuaire du corps humain ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "En quoi ?"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "En fait, les estuaires sont les zones de transition entre les rivières et l’océan. Ils servent notamment à filtrer les nutriments, piéger les polluants et nourrir une biodiversité incroyable. Sans eux, les écosystèmes marins des océans souffrent énormément."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Donc, si on pollue les estuaires, c’est un peu comme si on mangeait trop de malbouffe et qu’on surchargeait notre intestin ?"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Exactement ! Les estuaires finissent par être saturés. Résultat : des toxines partout et un écosystème malade."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "C’est fou de voir à quel point tout est lié. On devrait mieux prendre soin des estuaires et de notre intestin, alors !"
+            },
+            {
+                "personnage": "Marin",
+                "texte": "Tout à fait. Plus de fibres pour ton intestin et moins de déchets pour les estuaires."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Allez, à partir de maintenant, je respecte mon intestin comme un petit estuaire. Respectons la biodiversité dedans et dehors."
+            }
+        ]
     }
 ]
