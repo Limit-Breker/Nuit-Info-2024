@@ -133,7 +133,7 @@ const Board: React.FC = () => {
             }
             setProgressValue((prevProgress) => {
                 if (isColliding) {
-                    return Math.max(prevProgress - -10, 0);
+                    return Math.max(prevProgress - 10, 0);
                 } else {
                     return Math.min(prevProgress + 10, 100);
                 }
