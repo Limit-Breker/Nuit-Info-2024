@@ -1,19 +1,17 @@
 
 import { useState } from "react";
-import Confirm from "../../components/confirm/confirm";
 import PopupCredit from "../../components/popup/popupCredit";
-import bonhomme from "../../images/bonhomme.png";
-import { link } from "fs";
+import { persos } from "../../constants/images";
 
 const ListePerso: React.FC = () => {
     //liste d'objets pour chaque personne
-    const initialDonnée=[{
+    const initialDonnée = [{
         title: "Christian GIKAPA",
         role: ["L'Homme qui fait tout"],
         github: ["gamingdy"],
         linkedin: ["christian-gikapa-9a12122a9"],
         popupState: false,
-        image: bonhomme
+        image: persos.cricri
     },
     {
         title: "Sofia GRIBANOVA",
@@ -21,7 +19,7 @@ const ListePerso: React.FC = () => {
         github: ["pavuchochek"],
         linkedin: ["sofia-gribanova"],
         popupState: false,
-        image: bonhomme
+        image: persos.sofia
     },
     {
         title: "Yanis CROGUENNOC",
@@ -29,7 +27,7 @@ const ListePerso: React.FC = () => {
         github: ["Yeetnus"],
         linkedin: ["yanis-croguennoc-4255782a6"],
         popupState: false,
-        image: bonhomme
+        image: persos.nisnis
     },
     {
         title: "Romain BOUÏSSOU",
@@ -37,7 +35,7 @@ const ListePerso: React.FC = () => {
         github: ["uNastyy"],
         linkedin: ["romain-bouissou"],
         popupState: false,
-        image: bonhomme
+        image: persos.roro
     },
     {
         title: "Célia TOGNINI",
@@ -45,7 +43,7 @@ const ListePerso: React.FC = () => {
         github: ["Cemailla"],
         linkedin: ["célia-tognini-8ab182264"],
         popupState: false,
-        image: bonhomme
+        image: persos.celia
     },
     {
         title: "Cédric LONGUET",
@@ -53,7 +51,7 @@ const ListePerso: React.FC = () => {
         github: ["Tigropoil"],
         linkedin: ["cédric-longuet-88a99018a"],
         popupState: false,
-        image: bonhomme
+        image: persos.cedric
     },
     {
         title: "Simon ARMAND",
@@ -61,7 +59,7 @@ const ListePerso: React.FC = () => {
         github: ["username-Everam"],
         linkedin: ["simon-armand"],
         popupState: false,
-        image: bonhomme
+        image: persos.simsi
     },
     {
         title: "Naïl LAMARTI",
@@ -69,15 +67,15 @@ const ListePerso: React.FC = () => {
         github: ["Barukzeg"],
         linkedin: ["naïl-lamarti-922251293"],
         popupState: false,
-        image: bonhomme
+        image: persos.nail
     },
     {
         title: "Titouan HELBERT",
-        role: ["Frontend Developer"],
+        role: ["Front-end Developer"],
         github: ["unkn0wndfbx"],
         linkedin: ["titouan-helbert-1600b4320"],
         popupState: false,
-        image: bonhomme
+        image: persos.titou2
     },
     {
         title: "Titouan HERBAUT",
@@ -85,49 +83,50 @@ const ListePerso: React.FC = () => {
         github: ["Xispho"],
         linkedin: ["titouan-herbaut-209b372a7"],
         popupState: false,
-        image: bonhomme
+        image: persos.titou1
     }];
 
     const [donnée, setDonnée] = useState(initialDonnée);
-    const resetAllPopups = () => {  
+    const resetAllPopups = () => {
         const newDonnée = [...donnée];
         newDonnée.forEach((person) => {
             person.popupState = false;
         });
         setDonnée(newDonnée);
     };
-   return (
-    <div>
-        {donnée.map((person, index) => (
-            <div key={index}>
-                <img 
-                    src={person.image} 
-                    alt={person.title}
-                    onClick={() => {
-                        resetAllPopups();
-                        const newDonnée = [...donnée];
-                        newDonnée[index].popupState = true;
-                        setDonnée(newDonnée);
-                    }} 
-                />
-                {person.popupState && (
-                    <PopupCredit
-                        title={person.title}
-                        role={person.role}
-                        github={person.github} 
-                        linkedin={person.linkedin}
-                        onClose={() => {
+    return (
+        <div className="z-40 absolute top-[398px] left-[41%] flex flex-row gap-x-1">
+            {donnée.map((person, index) => (
+                <div key={index} className={`${person.popupState ? '' : 'hover:-translate-y-2'} transition-transform cursor-pointer`}>
+                    <img
+                        className="w-10 h-10"
+                        src={person.image}
+                        alt={person.title}
+                        onClick={() => {
+                            resetAllPopups();
                             const newDonnée = [...donnée];
-                            newDonnée[index].popupState = false;
+                            newDonnée[index].popupState = true;
                             setDonnée(newDonnée);
                         }}
-                        isOpen={person.popupState}
                     />
-                )}
-            </div>
-        ))}
-    </div>
-   );
-                    
+                    {person.popupState && (
+                        <PopupCredit
+                            title={person.title}
+                            role={person.role}
+                            github={person.github}
+                            linkedin={person.linkedin}
+                            onClose={() => {
+                                const newDonnée = [...donnée];
+                                newDonnée[index].popupState = false;
+                                setDonnée(newDonnée);
+                            }}
+                            isOpen={person.popupState}
+                        />
+                    )}
+                </div>
+            ))}
+        </div>
+    );
+
 };
 export default ListePerso;

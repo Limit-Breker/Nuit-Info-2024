@@ -15,7 +15,6 @@ const App: React.FC = () => {
                 <div className="content">
                     <Routes>
                         <Route path="/" element={<Accueil />} />
-                        <Route path="/test" element={<Test />} />
                         <Route path="/credit" element={<Credit />} />
                         <Route path="*" element={<h1>404 - Page non trouvée</h1>} />
                     </Routes>
