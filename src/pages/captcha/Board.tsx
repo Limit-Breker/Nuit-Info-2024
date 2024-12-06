@@ -118,6 +118,32 @@ const Board: React.FC = () => {
             image2Refs.current.delete(id); // Remove if the element is unmounted
         }
     };
+    useEffect(() => {
+      const interval = setInterval(() => {
+      if(progressValue >= 100) {
+        clearInterval(interval);
+        alert("You have successfully completed the captcha!");
+        window.location.href = "/";
+        return;
+      }
+      setProgressValue((prevProgress) => {
+        if (isColliding) {
+        return Math.max(prevProgress - 10, 0);
+        } else {
+        return Math.min(prevProgress + 20, 100);
+        }
+      });
+      }, 2000);
+
+      const timeout = setTimeout(() => {
+      clearInterval(interval);
+      }, 180000); // 3 minutes
+
+      return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+      };
+    }, [isColliding]);
 
     return (
         <div>
