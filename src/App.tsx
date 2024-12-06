@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Accueil from './pages/accueil/accueil';
 import Test from './pages/test/test';
 import Credit from './pages/credit/Credit';
+import Captcha from './pages/captcha/Captcha';
 
 const App: React.FC = () => {
     return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
                         <Route path="/" element={<Accueil />} />
                         <Route path="/test" element={<Test />} />
                         <Route path="/credit" element={<Credit />} />
+                        <Route path="/captcha" element={<Captcha />} />
                         <Route path="*" element={<h1>404 - Page non trouvée</h1>} />
                     </Routes>
                 </div>
