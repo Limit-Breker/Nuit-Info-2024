@@ -8,6 +8,7 @@ import Dialogue from './pages/dialogues/dialogue';
 import Credit from './pages/credit/Credit';
 import CookieClicker from './pages/cookieClicker/CookieClicker';
 import CookieClic from './pages/cookieClicker/CookieClic';
+import Port from "./pages/port/Port";
 
 const App: React.FC = () => {
     return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
                         <Route path="/cookieClicker" element={<CookieClic />} />
                         <Route path="/dialogue" element={<Dialogue />} />
                         <Route path="/credit" element={<Credit />} />
+                        <Route path="/port" element={<Port />} />
                     </Routes>
                 </div>
 
