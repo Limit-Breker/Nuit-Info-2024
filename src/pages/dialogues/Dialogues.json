@@ -1,0 +1,91 @@
+[
+    {
+        "titre": "Le coeur et les courants maritimes",
+        "phrases":[
+            {
+                "personnage": "Lucie",
+                "texte": 
+                "Le cœur de notre patient bat à une allure incroyablement faible, en dessous de 50 battements par minute. Sais-tu ce que cela implique ?"
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte": "Pas vraiment, mais ça n’a pas l’air bon."
+            },
+            {
+                "personnage": "Lucie",
+                "texte":
+                "C’est ce qu’on appelle une bradycardie. Quand le cœur bat trop lentement, il n’alimente pas suffisamment le corps en oxygène. Ça peut causer des vertiges, des évanouissements et même conduire à une insuffisance cardiaque."
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte": "Une insuffisance cardiaque ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte":
+                "Oui, le sang n’est plus pompé correctement, ce qui peut provoquer un œdème, une accumulation de liquide qui rend la respiration difficile. Et si cela empire, il risque des arrêts cardiaques ou des troubles graves comme la tachycardie ventriculaire."
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte": "C’est comme si un courant marin essentiel ralentissait ou s’arrêtait complètement !"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Ah, ça te parle mieux en termes marins, hein ?"
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte":
+                "Exactement ! Si un courant océanique comme le  Gulf Stream ralentit trop, ça perturbe tout : le climat change, les tempêtes deviennent plus violentes, et l’écosystème marin tout entier est menacé."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Intéressant. Alors pour l’océan, un courant comme le Gulf Stream, c’est un peu comme le cœur pour un humain ?"
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte":
+                "Tout à fait ! Les courants redistribuent la chaleur entre l’équateur et les pôles, comme le cœur distribue l’oxygène. Sans eux, les climats régionaux deviennent extrêmes et imprévisibles."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Et ça affecte directement la vie marine, j’imagine ?"
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte":
+                "Oui. Moins de courants signifie moins de mélange des eaux. Le phytoplancton, à la base de la chaîne alimentaire, ne se développe pas correctement. Sans lui, la biodiversité marine s’effondre."
+            },
+            {
+                "personnage": "Lucie",
+                "texte":
+                "Donc, un courant marin qui faiblit, c’est comme un cœur qui ralentit. L’oxygène dans le sang ou les nutriments dans l’eau ne sont plus distribués, et tout l’écosystème en pâtit."
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte":
+                "Exactement. Et comme la bradycardie peut entraîner des chutes et des blessures chez un humain, des courants marins perturbés peuvent provoquer des catastrophes naturelles comme des inondations et des tempêtes plus fréquentes."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Alors, on doit protéger les courants marins comme on surveille un cœur en bradycardie. Les deux sont essentiels à la vie."
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte": "Bien dit. Je vais méditer là-dessus pendant ma prochaine plongée. Et toi ?"
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Moi, je vais rappeler à ce patient de surveiller son cœur. Après tout, protéger son équilibre interne, c’est comme préserver celui de l’océan."
+            },
+            {
+                "personnage": "Jean-Marin",
+                "texte": "Deux écosystèmes, une même règle : l’équilibre avant tout."
+            },
+            {
+                "personnage": "Lucie",
+                "texte": "Exactement !"
+            }
+        ]
+    }
+]
