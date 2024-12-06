@@ -9,12 +9,14 @@ import { speakerImage } from '../../constants/speakerImage';
 interface Phrase {
     personnage: 'marin' | 'lucie';
     texte: string;
+    illustration?: string;
 }
 
 interface Dialogue {
     titre: string;
     img: keyof typeof dialogueImage;
     phrases: Phrase[];
+    illustration?: string;
 }
 
 const Dialogue1: React.FC = () => {
@@ -26,7 +28,8 @@ const Dialogue1: React.FC = () => {
             phrases: (dialogue.phrases as Phrase[]).map((phrase: Phrase) => {
                 return {
                     personnage: phrase.personnage,
-                    texte: phrase.texte
+                    texte: phrase.texte,
+                    illustration: phrase.illustration ? phrase.illustration : "",
                 };
             })
         };
