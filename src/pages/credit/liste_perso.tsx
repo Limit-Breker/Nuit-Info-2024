@@ -115,6 +115,7 @@ const ListePerso: React.FC = () => {
                             role={person.role}
                             github={person.github}
                             linkedin={person.linkedin}
+                            image={person.image}
                             onClose={() => {
                                 const newDonnée = [...donnée];
                                 newDonnée[index].popupState = false;
