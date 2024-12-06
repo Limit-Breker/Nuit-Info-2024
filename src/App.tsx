@@ -8,6 +8,7 @@ import Credit from './pages/credit/Credit';
 import Podcast from './pages/podcast/podcast';
 import CookieClic from './pages/cookieClicker/CookieClic';
 import Port from "./pages/port/Port";
+import Captcha from './pages/captcha/Captcha';
 
 const App: React.FC = () => {
     return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
                         <Route path="/credit" element={<Credit />} />
                         <Route path="/podcast" element={<Podcast />} />
                         <Route path="/port" element={<Port />} />
+                        <Route path="/captcha" element={<Captcha />} />
                     </Routes>
                 </div>
 
