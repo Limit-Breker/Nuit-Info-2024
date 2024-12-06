@@ -6,7 +6,7 @@ const Podcast: React.FC = () => {
 
     return (
     
-        <div className="flex-col flex items-center justify-start w-full max-w-[100vw] overflow-x-hidden relative">
+        <div className="flex-col flex items-center justify-end pt-24 w-full max-w-[100vw] overflow-hidden relative min-h-[100vh] bg-gray-800">
             <HeaderAccueil />
 
             <h3 className="text-3xl font-bold text-center pt-24">Podcast : Florian Sevellec</h3>
