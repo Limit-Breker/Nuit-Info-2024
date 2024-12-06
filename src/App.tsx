@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Accueil from './pages/accueil/accueil';
 import Dialogue from './pages/dialogues/dialogue';
 import Credit from './pages/credit/Credit';
+import Podcast from './pages/podcast/podcast';
 import CookieClic from './pages/cookieClicker/CookieClic';
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
                         <Route path="/cookieClicker" element={<CookieClic />} />
                         <Route path="/dialogue" element={<Dialogue />} />
                         <Route path="/credit" element={<Credit />} />
+                        <Route path="/podcast" element={<Podcast />} />
                     </Routes>
                 </div>
 
