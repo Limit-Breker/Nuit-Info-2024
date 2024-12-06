@@ -20,6 +20,8 @@ const HeaderAccueil: React.FC<HeaderProps> = ({ }) => {
                     <Link to="/" className="text-black hover:text-normal-blue transition-colors font-Lato font-semibold text-base">Accueil</Link>
                     <Link to="/credit" className="text-black hover:text-normal-blue transition-colors font-Lato font-semibold text-base">Crédits</Link>
                     <Link to="/captcha" className="text-black hover:text-normal-blue transition-colors font-Lato font-semibold text-base">Captcha</Link>
+                    <Link to="/podcast" className="text-black hover:text-normal-blue transition-colors font-Lato font-semibold text-base">Podcast</Link>
+
                 </div>
             </div>
             <Confirm title="Demo redirection" couleur="blue" onClick={toTest} />
