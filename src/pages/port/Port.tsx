@@ -6,6 +6,7 @@ const Port: React.FC = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
         const handleClick = (event: MouseEvent) => {
             const halfScreen = window.innerWidth / 2;
 
@@ -28,7 +29,7 @@ const Port: React.FC = () => {
     }, []);
 
     return (
-        <div className="flex-col flex items-center justify-start overflow-x-hidden relative bg-black">
+        <div className="flex-col flex items-center justify-start overflow-x-hidden relative bg-black cursor-pointer">
             <HeaderAccueil />
             <img src="port.png" alt="port" className="w-full h-full object-cover" />
         </div>
