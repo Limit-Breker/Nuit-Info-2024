@@ -83,19 +83,23 @@ const ParallaxOcean: React.FC<ParallaxOceanProps> = ({ isFixBoat }) => {
                     animation: isFixBoat ? '' : 'tangage 2s infinite ease-in-out',
                 }}
             >
-                <img
-                    src={process.env.PUBLIC_URL + "/images/speaker/jean-marin.svg"}
-                    alt="marin"
-                    className='absolute top-0 left-0 h-10 w-10 object-cover'
-                />
+                {!isFixBoat && (
+                    <img
+                        src={process.env.PUBLIC_URL + "/images/speaker/jean-marin.svg"}
+                        alt="marin"
+                        className='absolute top-[180px] left-12 h-12 w-12 object-cover'
+                    />
+                )}
                 <img
                     src={process.env.PUBLIC_URL + "/images/vrai_bateau.svg"}
                     alt="bateau" />
-                <img
-                    src={process.env.PUBLIC_URL + "/images/speaker/lucie.svg"}
-                    alt="lucie"
-                    className='absolute top-[180px] right-0 h-10 w-10 object-cover'
-                />
+                {!isFixBoat && (
+                    <img
+                        src={process.env.PUBLIC_URL + "/images/speaker/lucie.svg"}
+                        alt="lucie"
+                        className='absolute top-[178px] right-12 h-12 w-12 object-cover'
+                    />
+                )}
             </div>
 
             <img

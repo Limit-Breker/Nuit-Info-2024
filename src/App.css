@@ -44,51 +44,51 @@
 
 @keyframes tangage {
   0% {
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
   }
 
   25% {
-    transform: rotate(5deg);
+    transform: rotate(3deg);
   }
 
   50% {
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
   }
 
   75% {
-    transform: rotate(5deg);
+    transform: rotate(3deg);
   }
 
   100% {
-    transform: rotate(0deg);
+    transform: rotate(-3deg);
   }
 }
 
 @keyframes flap-left-wing {
   0% {
-    transform: rotate(-40deg);
+    transform: rotate(-80deg);
   }
 
   50% {
-    transform: rotate(-18deg);
+    transform: rotate(-35deg);
   }
 
   100% {
-    transform: rotate(-40deg);
+    transform: rotate(-80deg);
   }
 }
 
 @keyframes flap-right-wing {
   0% {
-    transform: rotate(20deg);
+    transform: rotate(60deg);
   }
 
   50% {
-    transform: rotate(10deg);
+    transform: rotate(30deg);
   }
 
   100% {
-    transform: rotate(20deg);
+    transform: rotate(60deg);
   }
 }
 
