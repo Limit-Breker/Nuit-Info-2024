@@ -151,7 +151,7 @@ const Board: React.FC = () => {
     }, [isColliding]);
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-blue-100">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-blue-100 pt-24">
             <div className="mb-4">
                 <p className="text-lg font-semibold">Progress:</p>
                 <ProgressBar completed={progressValue} width="50vw" />
