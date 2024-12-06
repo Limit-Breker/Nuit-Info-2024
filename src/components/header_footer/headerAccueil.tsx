@@ -23,6 +23,7 @@ const HeaderAccueil: React.FC<HeaderProps> = ({ }) => {
                     <Link to="/captcha" className={`${location.pathname === "/captcha" ? "text-normal-blue" : "text-black"} hover:text-normal-blue transition-colors font-Lato font-semibold text-base`}>Captcha</Link>
                     <Link to="/cookieClicker" className={`${location.pathname === "/cookieClicker" ? "text-normal-blue" : "text-black"} hover:text-normal-blue transition-colors font-Lato font-semibold text-base`}>CookieClicker</Link>
                     <Link to="/podcast" className="text-black hover:text-normal-blue transition-colors font-Lato font-semibold text-base">Podcast</Link>
+                    <Link to="/port" className="text-black hover:text-normal-blue transition-colors font-Lato font-semibold text-base">Retrogaming</Link>
                 </div>
             </div>
             <Confirm title="C'est parti !" couleur="blue" onClick={dialogue} />
